@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { ContactForm } from "@/components/ContactForm";
 
 const Index = () => {
   return (
@@ -147,23 +148,19 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section id="contact" className="py-24 bg-primary">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
-            Building the Future Together
-          </h2>
-          <p className="text-xl text-primary-foreground/90 mb-12 max-w-3xl mx-auto">
-            Are you a founder with a transformative vision? We're here to partner with ambitious entrepreneurs building exceptional companies.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6">
-              SUBMIT YOUR PITCH
-            </Button>
-            <Button size="lg" variant="outline" className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-6">
-              LEARN MORE
-            </Button>
+      {/* Contact Section */}
+      <section id="contact" className="py-24 bg-card">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <p className="text-accent font-semibold mb-4 tracking-wider">Get in Touch</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+              Submit Your Pitch
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Are you a founder with a transformative vision? We're here to partner with ambitious entrepreneurs building exceptional companies.
+            </p>
           </div>
+          <ContactForm />
         </div>
       </section>
 
